@@ -77,6 +77,9 @@ public class MainActivity extends AppCompatActivity {
                 name.setText("");
                 lastname.setText("");
                 email.setText("");
+                photoPath = findViewById(R.id.textView);
+                photoPath.setText("");
+                picturePath = "";
             }catch(Exception e){
                 Log.d(TAG,e.toString());
                 Toast.makeText(this,"DB Error!",Toast.LENGTH_SHORT).show();
