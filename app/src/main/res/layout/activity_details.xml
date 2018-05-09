@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lattitude.w2d2e1.Details">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        app:srcCompat="@drawable/ic_launcher_background"
+        tools:ignore="VectorDrawableCompat"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="28dp"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/nameTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lastNameTxtView"
+        android:layout_alignLeft="@+id/lastNameTxtView"
+        android:layout_alignStart="@+id/lastNameTxtView"
+        android:layout_marginBottom="29dp"
+        android:text="name"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="175dp" />
+
+    <TextView
+        android:id="@+id/lastNameTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="last name"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="210dp" />
+
+    <TextView
+        android:id="@+id/emailTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lastNameTxtView"
+        android:layout_alignStart="@+id/lastNameTxtView"
+        android:layout_below="@+id/lastNameTxtView"
+        android:layout_marginTop="28dp"
+        android:text="email"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="246dp" />
+
+</RelativeLayout>
